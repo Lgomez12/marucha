@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100; 1,200;1,300;1,400;1,500;1,600 & family= Roboto:ital,wght@0,100;0,300;0,400;1,100 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Texturina:ital,opsz,wght@0,12..72,300;0,12..72,400;0,12..72,500;0,12..72,600;0,12..72,700;1,12..72,500&display=swap');
 
-
-/*estrucura general de la pagina*/
 * {
     margin: 0px;
     padding: 0px;
@@ -9,11 +7,12 @@
 }
 
 body {
-    background-color: #F2CCB6;
-    font-family: initial;
+    background-color: #F1F1F1;
+    font-family: 'Texturina', serif;
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+
 }
 
 .contenedor {
@@ -30,7 +29,7 @@ body {
 
 /* HEADER PARA TODAS LAS PAGINAS*/
 .header {
-    background-color: #B3B6F2;
+    background-color: #EE9D99;
     font-weight: bold;
     height: 80%;
     text-align: left;
@@ -38,31 +37,34 @@ body {
 }
 
 .carrito {
-    width: 70px;
-    flex-direction: row;
-    color: #FDDF9F;
+    width: 50px;
+    height: 100px;
+    position: relative;
+    color: #F1F1F1;
+    float: right;
+    margin: 3%;
 
 }
 
 .navbar {
-    width: 100%;
-    background-color: #9E9BF2;
+    background-color: #67969C;
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    padding-top: 5px;
+    padding: 20%;
+    background-image: url(../recursos/imagenes/patitas.png);
+
 }
 
 .navbar a {
     font-size: 2rem;
-    margin-top: 30px;
     text-decoration: solid;
-    color: black;
+    color: #F1F1F1;
 }
 
 .logo {
-    height: 150px;
-    width: 150px;
+    height: 9.375em;
+    width: 9.375em;
     text-align: left;
 }
 
@@ -74,18 +76,22 @@ body {
     font-weight: bold;
     margin-top: 0%;
     background-image: url(../recursos/imagenes/patitas.png);
+
 }
 
 .redes {
     float: right;
     margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .imgrs {
     border-radius: 100%;
-    display: flex;
-    height: 60px;
-    width: 60px;
+    height: 3.125em;
+    width: 3.125em;
 }
 
 .img {
@@ -94,17 +100,20 @@ body {
 
 .navbar {
     text-decoration: none;
-    bottom: 0%;
     position: relative;
     padding: 30px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .navbar a {
-    text-decoration: none;
     font-size: 3rem;
     margin-top: 30px;
     text-decoration: solid;
-    color: black;
+    color: #F1F1F1;
 }
 
 #titularenca {
@@ -125,35 +134,38 @@ body {
 }
 
 .principal {
-    width: 600px;
+    width: 70vw;
     border-radius: 100%;
+    margin-top: 8%;
 }
 
-
-
 #titular1 {
-    font-size: 50px;
-    font-family: initial;
+    font-size: 6.25em;
+    font-family: 'Texturina', serif;
     padding: auto;
     text-align: center;
+    color: #67969C;
 }
 
 #titular2 {
-    font-size: 20px;
-    font-family: initial;
+    font-size: 1.25em;
+    font-family: 'Texturina', serif;
     padding: auto;
+
 }
 
 #titular3 {
     font-size: 20px;
-    font-family: initial;
+    font-family: 'Texturina', serif;
     padding: auto;
+    color: #67969C;
 }
 
 .box {
     background-color: #e7dfdffa;
-    width: 800px;
+    width: 420px;
     height: 400px;
+    background-image: url(../recursos/imagenes/patitas.png);
 
     margin-left: 10px;
     margin-right: 30px;
@@ -170,7 +182,7 @@ body {
     border: solid 8px#FDDF9F;
     overflow: scroll;
 
-    font-family: initial;
+    font-family: 'Satisfy', cursive;
     font-size: 2rem;
 }
 
@@ -178,51 +190,59 @@ body {
 
 #titular4 {
     font-size: 50px;
-    font-family: initial;
+    font-family: 'Texturina', serif;
     padding: auto;
     text-align: center;
+    color: #67969C;
 }
 
-.promociones__gird {
+.promociones__grid {
     flex-wrap: wrap;
-
+    margin: 5%;
 }
 
 .card {
     width: max-content;
-    background-color: #b3b6f2;
+    background-color: #67969C;
     border-radius: 10%;
+    margin: 0px;
 
 }
 
 .promo {
-    grid-template-columns: repeat(3, fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
     row-gap: 20px;
-    width: 300px;
-    margin-top: auto;
-    border-color: #b3b6f2;
+    width: 30rem;
+    border-color: #67969C;
     border-radius: 10%;
     cursor: pointer;
+    padding: 40px;
+    /*box-shadow: 1px 3px 20px;
+    cursor: default;
+    transition: all 300ms- ease;*/
+
 }
 
 .card-body {
     text-align: center;
-    margin: 10px;
+    margin-right: 0px;
 }
 
 .card-title {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Texturina', serif;
     font-size: 2rem;
     margin: 5px;
     text-align: center;
+    color: #FDDF9F;
 }
 
 .card-text {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Texturina', serif;
     font-size: medium;
     text-align: justify;
-    margin: 5px;
+    text-align: center;
+    color: #FDDF9F;
 }
 
 .pagination {
@@ -230,130 +250,235 @@ body {
 
 }
 
-
 /*ACA COMIENZA LA PAGINA DE CONTACTO*/
 
 #titular5 {
     padding: 0%;
     font-size: 50px;
-    font-family: initial;
+    font-family: 'Texturina', serif;
     text-align: center;
     border-radius: 20%;
-
+    color: #67969C;
 }
 
-.imagen {
-    height: 400px;
-    width: 600px;
-    flex-direction: center;
-    opacity: 0.7;
-    filter: alpha (opacity=100);
+#imgc {
+    margin: 20px;
+    border-radius: 50px;
 
 }
 
 .text-sm-start {
     font-size: medium;
-    font-family: initial;
+    font-family: 'Satisfy', cursive;
 
 }
 
 .text-lager-start {
-    font-family: initial;
+    font-family: 'Texturina', serif;
     font-size: 2rem;
     text-align: left;
     justify-content: center;
     padding: 0%;
+    margin: 15px;
 }
 
 .subscripcion {
     display: block;
     margin: 50px auto;
-    width: 60%;
-    max-width: 490px;
-    min-width: 320px;
     position: relative;
     overflow: hidden;
-    background-color: burlywood;
+    max-width: 25em;
+    min-width: 20em;
+    background-color: #67969C;
 }
 
 h4 {
     text-align: center;
     margin: 30px 15px;
+    color: #67969C;
 }
 
 .bajada {
-    max-width: 490px;
-    margin: 50px auto 75px;
-    font-size: 19px;
     text-align: center;
     font-size: 3rem;
+    margin: 1.125em auto 1.6875em;
+    color: #67969C;
+    font-family: Safisty;
 }
 
-.fondo__formulario {
-    background-image: url(../recursos/imagenes/fondoformulario.png);
-    /*background-repeat: no-repeat;
-    background-position: fluid;*/
+#fondo__formulario {
     background-size: cover;
-    height: 400px;
-    width: 100%;
-    opacity: 0.7;
-    filter: alpha (opacity=100);
+    width: 350px;
+    height: 220px;
+    border-radius: 20px;
+    background-image: url(../recursos/imagenes/fondoformulario.png);
+
 }
 
-.caja__formulario {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    font-family: initial;
+#texto {
+    color: #F1F1F1;
 }
 
-.formulario {
-    padding: 2px;
+.contact_form {
+    width: 440px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #67969C;
+    padding-left: 30px;
+    background-image: url(../recursos/imagenes/patitas.png);
 }
 
-.formulario input {}
+.input {
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
 
-textarea {
-    font-size: 1, 5rem;
+
+.textarea {
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
 }
 
 
 /*ACA COMIENZA LA PAGINA DE GALERIA*/
 .promociones__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-    row-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    padding: 5px;
 }
+
 
 #titular6 {
     font-size: 50px;
-    font-family: initial;
+    font-family: 'Texturina', serif;
     text-align: center;
+    color: #67969C;
 }
 
 
 /*ACA COMIENZA LA PAGINA DE PROMOCIONES*/
-
 #titular7 {
     font-size: 60px;
-    font-family: initial;
+    font-family: 'Texturina', serif;
     padding: auto;
     text-align: center;
+    color: #67969C;
 }
 
 #titular8 {
     font-size: 30px;
-    font-family: initial;
+    font-family: 'Texturina', serif;
     padding: auto;
     text-align: center;
     display: flex;
+    color: #67969C;
 
 }
 
 /*RESPONSIVE*/
 
-@media screen and (max-width:320px) and (max-width: 425px) {
-    .contenedor {}
+@media screen and (min-width:320px) and (max-width: 426px) {
 
+    /* header para todas las paginas*/
+    .main {
+        margin: auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+        height: 90%;
+        margin: auto;
+    }
+
+    .contenedor {
+        height: 0, 0, 1;
+    }
+
+    /*footer para todas las paginas*/
+    .redes {
+        flex-flow: nowrap;
+    }
+
+    /*aca comienza mi pagina de inicio*/
+    .principal {
+        width: 200px;
+    }
+
+    #titular1 {
+        font-size: 4rem;
+    }
+
+    .box {
+        width: 300px;
+        height: 400px;
+    }
+
+    /* aca termina la pagina de inicio */
+
+    /*aca comienza accesorios*/
+
+    .promociones__grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 0px;
+        column-gap: 20px;
+    }
+
+    .promo {
+        padding-inline-start: 30px;
+    }
+
+    .card {
+        width: 290px;
+        margin: 5px;
+    }
+
+    /*aca termina accesorios*/
+
+    /*aca comienza contactos*/
+    #imgc {
+        width: 300px;
+        height: max-content;
+        text-align: justify;
+        padding: 0%;
+        justify-content: center;
+    }
+
+    .text-lager-start {
+        width: 80%;
+        justify-content: flex-start;
+    }
+
+    .contact_form {
+        width: 250px;
+        height: auto;
+        padding: 5%;
+    }
+
+    #fondo__formulario {
+        height: 80px;
+        width: 220px;
+    }
+
+    /*aca termina contactos*/
 }

@@ -16,6 +16,12 @@
     <div class="contenedor">
         <div class="container__grid">
             <header class="header">
+                <div class="carrito">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                    </svg>
+                </div>
                 <a href="../index.html"><img src="../recursos/imagenes/logomarucha.png" alt="logo/" width="150px"></a>
                 <nav class="navbar">
                     <a href="../index.html">Inicio</a>
@@ -28,12 +34,11 @@
         </div>
     </div>
     <main>
-        <h1 id="titular5"><strong>Tienda de Accesorios Perrunos</strong> </h1>
+        <h1 id="titular5"><strong>Tienda Boutique</strong> </h1>
         <br>
         <div class="clearfix">
-            <img src="../recursos/imagenes/f3.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+            <img src="../recursos/imagenes/f3.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" id="imgc" alt="...">
             <div class="text-lager-start">
-
                 <p><strong>NUESTROS VALORES:</strong>
                     En <strong>MaruchaPetShop </strong>creemos que, para cumplir con nuestra misión, necesitamos
                     tener un estilo
@@ -53,7 +58,6 @@
                     tareas a cargo. El Compromiso permite pasar de las promesas a los hechos, generando resultados y
                     beneficios tangibles.<br>
                 </p>
-
                 <p>
                     <strong>INNOVACIÓN:</strong>
                     Es la aplicación eficiente de la creatividad. Se refleja en la redefinición y/o reinvención de
@@ -72,7 +76,6 @@
                     participando solidariamente para crear una comunidad inclusiva y el cuidado del medio
                     ambiente.<br>
                 </p>
-
                 <p>
                     <strong>SERVICIO:</strong>
                     Como valor supremo, la calidad del servicio al cliente es lo que nos distingue de la competencia
@@ -94,56 +97,77 @@
         </div>
         <br>
         <section>
-            <div class="contacto">
-                <section class="contacto__seccion">
-                    <div class="fondo__formulario">
-                        <div class="caja__formulario">
+            <div class="contact_form">
+                <div class="formulario">
+                    <div id="fondo__formulario"></div>
+                    <h1 id="texto"><strong>Formulario de Contacto</strong></h1>
+                    <h3 id="texto">Escríbinos y en breve nos pondremos en contacto </h3>
+                    <form action="submeter-formulario.php" method="post">
+                        <p>
+                            <label for="nombre" class="colocar_nombre"> Nombre
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                                placeholder="Marucha">
+                        </p>
 
-                            <h1><strong> <b>Dejanos tu Consulta</b></strong></h1>
-                            <form class="formulario" action="" method="post">
-                                <div>
-                                    <input type="text" name="name" id="name" class="field" placeholder="Nombre"
-                                        required>
-                                </div>
+                        <p>
+                            <label for="email" class="colocar_email">Email
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <input type="email" name="introducir_email" id="email" required="obligatorio"
+                                placeholder="@MaruchaPetShop">
+                        </p>
 
-                                <div>
-                                    <input type="email" name="email" id="email" class="field" placeholder="Email"
-                                        required>
-                                </div>
+                        <p>
+                            <label for="telefone" class="colocar_telefono">Teléfono
+                            </label>
+                            <input type="tel" name="introducir_telefono" id="telefono" placeholder="000000000">
+                        </p>
 
-                                <div>
-                                    <input type="tel" name="subject" id="subject" class="field" placeholder="Celular"
-                                        required>
-                                </div>
+                        <p>
+                            <label for="asunto" class="colocar_asunto">Asunto
+                                <span class="compra mayorista">*</span>
+                            </label>
+                            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                                placeholder="Escribe un asunto">
+                        </p>
 
-                                <div>
-                                    <textarea name="message" id="message" class="field" placeholder="Mensaje"
-                                        required></textarea>
-                                </div>
-                                <div>
-                                    <input type="submit" value="Enviar" class="btn">
-                                </div>
-                        </div>
-                    </div>
-                </section>
-                <div class="caja__formulario">
-                    <p class="bajada"><br> <strong> Suscribite a nuestro Newsletter </strong></br>Catalogo mensual,
-                        con lo
-                        ultimo en Diseños </p>
-                    <section class="subscripcion">
-                        <form>
-                            <fieldset>
-                                <p>Email</p>
-                                <input type="text" name="email" style="width: 100%; padding: 2px 3px"
-                                    placeholder="@MaruchaPetShop" id="subscribe-field">
-                                <input type="hidden" name="action" value="subscribe">
-                                <input type="submit" value="Enviar">
-                            </fieldset>
-                        </form>
-                    </section>
+                        <p>
+                            <label for="mensaje" class="colocar_mensaje">Mensaje
+                                <span class="obligatorio">*</span>
+                            </label>
+                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"
+                                required="obligatorio" placeholder="Dejanos tu comentario..."></textarea>
+                        </p>
+
+                        <button type="submit" name="enviar_formulario" id="enviar">
+                            <p> <strong> Enviar</strong></p>
+                        </button>
+
+                        <p class="aviso">
+                            <span class="obligatorio">* </span>los campos son obligatorios.
+                        </p>
+
+                    </form>
                 </div>
-    </main>
-    <footer class=" footer">
+            </div>
+        </section>
+        <div class="caja__formulario">
+            <p class="bajada"><strong> Suscribite a nuestro Newsletter </strong></br>Catalogo mensual con
+                lo ultimo en Diseños </p>
+            <section class="subscripcion">
+                <form>
+                    <fieldset>
+                        <p>Email</p>
+                        <input type="text" name="email" style="width: 100%; padding: 2px 3px"
+                            placeholder="@MaruchaPetShop" id="subscribe-field">
+                        <input type="hidden" name="action" value="subscribe">
+                        <input type="submit" value="Enviar">
+                    </fieldset>
+                </form>
+            </section>
+        </div>
         <div class="redes">
             <div><a href="https://www.instagram.com/" target="Instagram"></div>
             <img src="../recursos/imagenes/inst.png" class="imgrs" alt=""></img>
@@ -154,12 +178,14 @@
             <div><a href="https://web.whatsapp.com/" target="whatsapp"></div>
             <img src="../recursos/imagenes/wha.png" class="imgrs" alt=""></img>
         </div>
+    </main>
+    <footer class=" footer">
         <nav class="navbar">
-            <a class__link href="./index.html">Inicio</a>
-            <a class__link href="./paginas/accesorios.html">Accesorios</a>
-            <a classs__link href="./contacto.html">Contacto</a>
-            <a class__link href="./paginas/galeria.html">Galeria</a>
-            <a class__link href="./paginas/promociones.html">Promociones</a>
+            <a class__link href="../index.html">Inicio</a>
+            <a class__link href="../paginas/accesorios.html">Accesorios</a>
+            <a classs__link href="../contacto.html">Contacto</a>
+            <a class__link href="../paginas/galeria.html">Galeria</a>
+            <a class__link href="../paginas/promociones.html">Promociones</a>
         </nav>
         <section>
             <h3><strong>Aceptamos todos los medios de pagos</strong></h3>

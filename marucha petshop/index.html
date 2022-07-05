@@ -10,18 +10,18 @@
     <!--  Referencia a Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <!-- En esta linea llamamos a la libreria de CSS de Bootstrap-->
-    <link rel="stylesheet" href="./css/estilos.css">
-
+    <link rel="stylesheet" href="./css/estilos.css?a=0">
 </head>
 
 <body>
     <div class="contenedor">
         <header class="header">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="carrito"
-                viewBox="0 0 16 16">
-                <path
-                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-            </svg>
+            <div class="carrito">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                </svg>
+            </div>
             <a href="./index.html"><img src="./recursos/imagenes/logomarucha.png" class="logo" alt="">
                 <nav class="navbar">
                     <a class__link href="./index.html">Inicio</a>
@@ -32,56 +32,51 @@
                 </nav>
         </header>
     </div>
-</body>
-<main class="main">
-    <div>
-        <img class="principal" src="./recursos/imagenes/logomarucha.png" class="rounded mx-auto d-block" alt="...">
-    </div>
-    <div class="box">
-        <p class="box__parrafo"><strong><b>Marucha PetShop</strong></b>: ¿Quiénes somos?.
-            Somos una empresa lider con mas de 30 años dedicandomos al cuidado de las mascotas.<br>
-        <div><strong>Marucha PetShop:</strong> Es la primera y única tienda especializada en productos y servicios
-            para
-            mascotas. Te damos
-            una experiencia diferente de compra, ofreciendo productos y servicios de alta calidad que cumplen con
-            las
-            necesidades de las mascotas y la satisfacción de sus dueños.<br>
-        </div>
+    <main class="main">
         <div>
-            <strong>En Marucha PetShop:</strong> Reconocemos a las mascotas como un miembro más de la familia, a las
-            que
-            debemos cuidar,
-            proteger, y brindar el mejor cuidado para que tengan una excelente calidad de vida. ¡Para ello ofrecemos
-            la
-            más amplia variedad en productos alimenticios, accesorios y mucho más!<br>
+            <img class="principal" src="./recursos/imagenes/logomarucha.png" alt="imagen">
         </div>
-        <div>
-            <strong>Nuestra visión</strong>
-            Las mascotas son nuestra pasión. Trabajamos todos los días para mejorar su calidad de vida, como así
-            también
-            la relación con sus tutores mediante el traspaso de información útil y la recomendación de productos
-            adecuados.<br>
-        </div>
-        <div>
-            <strong>Nuestra Misión:</strong>
-            Contribuir a crear un mundo mejor, ayudando a amar y proteger a sus mascotas. Basados en nuestro equipo
-            de
-            trabajo somo solidarios socialmente, brindando la mayor cantidad de trabajo posible, innovando
-            constantemente y logrando un prestigio que nos haga perduran en el tiempo. Invirtiendo e innovando en
-            proyectos para ampliar la estructura y seguir creciendo en otras ciudades. Aportando y participado
-            solidariamente para crear una comunidad inclusiva y el cuidado del medio ambiente<br>
-            <div>
-                <strong>Marucha Pet, donde las mascotas están primero.</strong>
+        <h1 id="titular1"><strong> Mimalos en todo Momento<br></strong></h1>
+        <div class="box">
+            <p class="box__parrafo"><strong><b>Marucha PetShop</strong></b>: ¿Quiénes somos?.
+                Somos una empresa lider con mas de 30 años dedicandonos al cuidado de las mascotas.<br>
+            <div><strong>Marucha PetShop:</strong> Es la primera y única tienda especializada en productos y servicios
+                para
+                mascotas. Te damos
+                una experiencia diferente de compra, ofreciendo productos y servicios de alta calidad que cumplen con
+                las
+                necesidades de las mascotas y la satisfacción de sus dueños.<br>
             </div>
+            <div>
+                <strong>En Marucha PetShop:</strong> Reconocemos a las mascotas como un miembro más de la familia, a las
+                que
+                debemos cuidar,
+                proteger, y brindar el mejor cuidado para que tengan una excelente calidad de vida. ¡Para ello ofrecemos
+                la
+                más amplia variedad en productos alimenticios, accesorios y mucho más!<br>
+            </div>
+            <div>
+                <strong>Nuestra visión</strong>
+                Las mascotas son nuestra pasión. Trabajamos todos los días para mejorar su calidad de vida, como así
+                también
+                la relación con sus tutores mediante el traspaso de información útil y la recomendación de productos
+                adecuados.<br>
+            </div>
+            <div>
+                <strong>Nuestra Misión:</strong>
+                Contribuir a crear un mundo mejor, ayudando a amar y proteger a sus mascotas. Basados en nuestro equipo
+                de
+                trabajo somo solidarios socialmente, brindando la mayor cantidad de trabajo posible, innovando
+                constantemente y logrando un prestigio que nos haga perduran en el tiempo. Invirtiendo e innovando en
+                proyectos para ampliar la estructura y seguir creciendo en otras ciudades. Aportando y participado
+                solidariamente para crear una comunidad inclusiva y el cuidado del medio ambiente<br>
+                <div>
+                    <strong>Marucha Pet, donde las mascotas están primero.</strong>
+                </div>
+            </div>
+            </p>
         </div>
-        </p>
-    </div>
-</main>
-
-
-<footer class="footer">
-    <div class="redes ">
-        <div class="img">
+        <div class="redes ">
             <div><a href="https://www.instagram.com/" target="Instagram "></div>
             <img src="./recursos/imagenes/inst.png" class="imgrs" alt=""></img>
             <div><a href="https://es-la.facebook.com/" target="Facebook"></div>
@@ -91,24 +86,25 @@
             <div><a href="https://web.whatsapp.com/" target="Whatsapp"></div>
             <img src="./recursos/imagenes/wha.png" class="imgrs" alt=""></img>
         </div>
-    </div>
-    <nav class="navbar">
-        <a class__link href="./index.html">Inicio</a>
-        <a class__link href="./paginas/accesorios.html">Accesorios</a>
-        <a classs__link href="./paginas/contacto.html">Contacto</a>
-        <a class__link href="./paginas/galeria.html">Galeria</a>
-        <a class__link href="./paginas/promociones.html">Promociones</a>
-    </nav>
-    <strong>
-        @Copyright 2022 LG | <a href="https://MaruchaPetShop.com/terminos &condiciones">Términos y
-            condiciones</a>
-    </strong>
-</footer>
-
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Bootstrap JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        </div>
+    </main>
+    <footer class="footer">
+        <nav class="navbar">
+            <a class__link href="./index.html">Inicio</a>
+            <a class__link href="./paginas/accesorios.html">Accesorios</a>
+            <a classs__link href="./paginas/contacto.html">Contacto</a>
+            <a class__link href="./paginas/galeria.html">Galeria</a>
+            <a class__link href="./paginas/promociones.html">Promociones</a>
+        </nav>
+        <strong>
+            @Copyright 2022 LG | <a href="https://MaruchaPetShop.com/terminos &condiciones">Términos y
+                condiciones</a>
+        </strong>
+    </footer>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
